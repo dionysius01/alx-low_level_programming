@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - prints the alphabet in lowercase,
  * followed by a new line, except q and e
@@ -6,16 +7,16 @@
  */
 int main(void)
 {
-	char alph;
+	char ch = 'a';
 
-	for (alph = 'a'; alph <= 'z'; alph++)
+	while (ch <= 'z')
 	{
-	    if(alph == 'e'|| alph == 'q')
-        {
-            continue;
-        }
-		putchar(alph);
+		if (ch != 'e' && ch != 'q')
+		{
+			putchar(ch);
+		}
+		ch++;
 	}
-		putchar('\n');
+	putchar('\n');
 	return (0);
 }

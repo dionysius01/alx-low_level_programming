@@ -1,19 +1,11 @@
 #include "main.h"
 /**
- * main - checks if a code is uppercase or lowercase
- * returns 1 if c is uppercase
- * returns 0 otherwise
+ * _isupper - checks for uppercase character
+ * @c: the character to be checked
+ * Return: 1 if c is uppercase, 0 otherwise
  */
 
 int _isupper(int c)
 {
-	int c;
-	if(c >= 97 && c <=122)
-	{
-		return 1;
-	}
-	else
-	{
-	return 0;
-	}
+	return(c >= 97 && c <=122)
 }
